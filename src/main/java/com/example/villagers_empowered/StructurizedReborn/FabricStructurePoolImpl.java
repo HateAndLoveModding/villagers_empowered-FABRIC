@@ -1,10 +1,9 @@
 package com.example.villagers_empowered.StructurizedReborn;
 
-import com.mojang.datafixers.util.Pair;
 import com.example.villagers_empowered.mixin.StructurePoolAccessor;
+import com.mojang.datafixers.util.Pair;
 import net.minecraft.structure.pool.StructurePool;
 import net.minecraft.structure.pool.StructurePoolElement;
-import net.minecraft.util.Identifier;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,18 +11,10 @@ import java.util.List;
 
 public class FabricStructurePoolImpl implements FabricStructurePool {
     private final StructurePool pool;
-    private final Identifier id;
 
-    public FabricStructurePoolImpl(StructurePool pool, Identifier id) {
+    public FabricStructurePoolImpl(StructurePool pool) {
         this.pool = pool;
-        this.id = id;
     }
-
-    @Override
-    public void addStructurePoolElement(StructurePoolElement element) {
-        addStructurePoolElement(element, 1);
-    }
-
     @Override
     public void addStructurePoolElement(StructurePoolElement element, int weight) {
         //adds to elementCounts list; minecraft makes these immutable lists, so we replace them with an array list
@@ -46,10 +37,5 @@ public class FabricStructurePoolImpl implements FabricStructurePool {
     @Override
     public StructurePool getUnderlyingPool() {
         return pool;
-    }
-
-    @Override
-    public Identifier getId() {
-        return id;
     }
 }
