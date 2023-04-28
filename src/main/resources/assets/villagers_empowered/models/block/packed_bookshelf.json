@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "villagers_empowered:block/packed_bookshelf"
-  }
-}

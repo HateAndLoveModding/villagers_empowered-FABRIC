@@ -6,8 +6,8 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -18,8 +18,6 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.WOOD).strength(2.5f).hardness(2.5f).requiresTool()), ItemGroup.MISC);
     public static final Block CREATURE_CARRIER_BLOCK = registerBlock("creature_carrier_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(3.5f).hardness(3.5f).requiresTool()), ItemGroup.MISC);
-    public static final Block PACKED_BOOKSHELF = registerBlock("packed_bookshelf",
-            new Block(FabricBlockSettings.of(Material.WOOD).strength(4f).hardness(4f).requiresTool()), ItemGroup.MISC);
 
     private static Block registerBlockWithoutItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(villagers_empowered.MOD_ID, name), block);
