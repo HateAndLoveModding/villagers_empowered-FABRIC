@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "villagers_empowered",
+  "version": "${version}",
+  "name": "Villagers Empowered",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/custom_villager/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.villagers_empowered.villagers_empowered"
+    ]
+  },
+  "mixins": [
+    "villagers_empowered.mixins.json"
+  ],
+  "accessWidener": "villagers_empowered.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "minecraft": ">=1.19.3",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

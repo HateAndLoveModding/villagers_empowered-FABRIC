@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#$#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_bars"
+    },
+    "$": {
+      "item": "villagers_empowered:base_spawn_egg"
+    }
+  },
+  "result": {
+    "item": "villagers_empowered:creature_carrier_block"
+  }
+}

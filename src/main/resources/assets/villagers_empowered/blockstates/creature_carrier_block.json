@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "villagers_empowered:block/creature_carrier_block" }
+  }
+}

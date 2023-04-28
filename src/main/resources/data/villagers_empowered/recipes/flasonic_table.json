@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:composter"
+    },
+    {
+      "item": "minecraft:lectern"
+    }
+  ],
+  "result": {
+    "item": "villagers_empowered:flasonic_table"
+  }
+}
