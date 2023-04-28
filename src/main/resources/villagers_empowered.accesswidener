@@ -1,0 +1,3 @@
+accessWidener v1 named
+accessible field net/minecraft/structure/processor/StructureProcessorLists EMPTY Lnet/minecraft/registry/RegistryKey;
+mutable    field    net/minecraft/structure/pool/StructurePool    elementCounts    Ljava/util/List;
