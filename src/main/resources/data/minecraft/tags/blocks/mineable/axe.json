@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "villagers_empowered:flasonic_table",
-    "villagers_empowered:lifarmian_table",
-    "villagers_empowered:packed_bookshelf"
+    "villagers_empowered:lifarmian_table"
   ]
 }
