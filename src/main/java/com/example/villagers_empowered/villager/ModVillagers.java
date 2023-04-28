@@ -1,12 +1,12 @@
 package com.example.villagers_empowered.villager;
 
 import com.example.villagers_empowered.block.ModBlocks;
-import com.example.villagers_empowered.villagers_empowered;
 import com.example.villagers_empowered.item.ModItems;
+import com.example.villagers_empowered.villagers_empowered;
 import com.google.common.collect.ImmutableSet;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
-import net.fabricmc.fabric.api.object.builder.v1.villager.VillagerProfessionBuilder;
-import net.fabricmc.fabric.api.object.builder.v1.world.poi.PointOfInterestHelper;
+import net.fabricmc.fabric.mixin.object.builder.PointOfInterestTypeAccessor;
+import net.fabricmc.fabric.mixin.object.builder.VillagerProfessionAccessor;
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.EnchantmentLevelEntry;
 import net.minecraft.enchantment.Enchantments;
@@ -23,32 +23,31 @@ import net.minecraft.world.poi.PointOfInterestType;
 
 public class ModVillagers {
     public static final PointOfInterestType FLASONIC_POI = registerPOI("flasonic_poi", ModBlocks.FLASONIC_TABLE);
-    public static final VillagerProfession FLASONIC = registerProfession("flasonic",
-            RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(villagers_empowered.MOD_ID, "flasonic_poi")));
+    public static final VillagerProfession FLASONIC = registerProfession("flasonic", FLASONIC_POI);
     public static final PointOfInterestType LIFARMIAN_POI = registerPOI("lifarmian_poi", ModBlocks.LIFARMIAN_TABLE);
-    public static final VillagerProfession LIFARMIAN = registerProfession("lifarmian",
-            RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(villagers_empowered.MOD_ID, "lifarmian_poi")));
+    public static final VillagerProfession LIFARMIAN = registerProfession("lifarmian", LIFARMIAN_POI);
     public static final PointOfInterestType CREATURE_CARRIER_POI = registerPOI("creature_carrier_poi", ModBlocks.CREATURE_CARRIER_BLOCK);
-    public static final VillagerProfession CREATURE_CARRIER = registerProfession("creature_carrier",
-            RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(villagers_empowered.MOD_ID, "creature_carrier_poi")));
+    public static final VillagerProfession CREATURE_CARRIER = registerProfession("creature_carrier", CREATURE_CARRIER_POI);
     public static final PointOfInterestType PACKED_LIBRARIAN_POI = registerPOI("packed_librarian_poi", ModBlocks.PACKED_BOOKSHELF);
-    public static final VillagerProfession PACKED_LIBRARIAN = registerProfession("packed_librarian",
-            RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE.getKey(), new Identifier(villagers_empowered.MOD_ID, "packed_librarian_poi")));
+    public static final VillagerProfession PACKED_LIBRARIAN = registerProfession("packed_librarian", PACKED_LIBRARIAN_POI);
 
-
-    public static VillagerProfession registerProfession(String name, RegistryKey<PointOfInterestType> type) {
+    public static VillagerProfession registerProfession(String name, PointOfInterestType type) {
         return Registry.register(Registry.VILLAGER_PROFESSION, new Identifier(villagers_empowered.MOD_ID, name),
-                VillagerProfessionBuilder.create().id(new Identifier(villagers_empowered.MOD_ID, name)).workstation(type)
-                        .workSound(SoundEvents.ENTITY_VILLAGER_WORK_ARMORER).build());
+                VillagerProfessionAccessor.create(name, type, ImmutableSet.of(), ImmutableSet.of(),
+                        SoundEvents.ENTITY_VILLAGER_WORK_ARMORER));
     }
 
     public static PointOfInterestType registerPOI(String name, Block block) {
-        return PointOfInterestHelper.register(new Identifier(villagers_empowered.MOD_ID, name),
-                1, 1, ImmutableSet.copyOf(block.getStateManager().getStates()));
+        return Registry.register(Registry.POINT_OF_INTEREST_TYPE, new Identifier(villagers_empowered.MOD_ID, name),
+                PointOfInterestTypeAccessor.callCreate(name,
+                        ImmutableSet.copyOf(block.getStateManager().getStates()), 1, 1));
     }
 
-    public static void registerVillagers() {
-        villagers_empowered.LOGGER.debug("Registering Villagers for " + villagers_empowered.MOD_ID);
+    public static void setupPOIs() {
+        PointOfInterestTypeAccessor.callSetup(FLASONIC_POI);
+        PointOfInterestTypeAccessor.callSetup(LIFARMIAN_POI);
+        PointOfInterestTypeAccessor.callSetup(CREATURE_CARRIER_POI);
+        PointOfInterestTypeAccessor.callSetup(PACKED_LIBRARIAN_POI);
     }
 
     public static void registerTrades() {

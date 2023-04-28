@@ -1,12 +1,13 @@
 package com.example.villagers_empowered.StructurizedReborn;
 
-import com.example.villagers_empowered.mixin.StructurePoolAccessor;
-import com.mojang.datafixers.util.Pair;
-import net.minecraft.structure.pool.StructurePool;
-import net.minecraft.structure.pool.StructurePoolElement;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import com.mojang.datafixers.util.Pair;
+
+import com.example.villagers_empowered.mixin.StructurePoolAccessor;
+import net.minecraft.structure.pool.StructurePool;
+import net.minecraft.structure.pool.StructurePoolElement;
 
 
 public class FabricStructurePoolImpl implements FabricStructurePool {
@@ -14,11 +15,6 @@ public class FabricStructurePoolImpl implements FabricStructurePool {
 
     public FabricStructurePoolImpl(StructurePool pool) {
         this.pool = pool;
-    }
-
-    @Override
-    public void addStructurePoolElement(StructurePoolElement element) {
-        addStructurePoolElement(element, 1);
     }
 
     @Override

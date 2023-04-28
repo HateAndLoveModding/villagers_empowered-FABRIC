@@ -2,8 +2,6 @@ package com.example.villagers_empowered.item;
 
 import com.example.villagers_empowered.villagers_empowered;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;

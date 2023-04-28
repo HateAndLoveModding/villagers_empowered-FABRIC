@@ -5,7 +5,6 @@ import com.example.villagers_empowered.item.ModItems;
 import com.example.villagers_empowered.villager.ModVillagers;
 import com.example.villagers_empowered.world.village.VillageAdditions;
 import net.fabricmc.api.ModInitializer;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,7 +16,7 @@ public class villagers_empowered implements ModInitializer {
 	public void onInitialize() {
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
-		ModVillagers.registerVillagers();
+		ModVillagers.setupPOIs();
 		ModVillagers.registerTrades();
 		VillageAdditions.registerNewVillageStructures();
 	}

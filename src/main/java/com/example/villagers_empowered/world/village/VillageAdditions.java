@@ -8,7 +8,7 @@ public class VillageAdditions {
     public static void registerNewVillageStructures() {
         FabricStructurePoolRegistry.registerSimple(
                 new Identifier("minecraft:village/plains/houses"),
-                new Identifier(villagers_empowered.MOD_ID, "packed_house"), 200
+                new Identifier(villagers_empowered.MOD_ID, "packed_house"), 2
         );
     }
 }
