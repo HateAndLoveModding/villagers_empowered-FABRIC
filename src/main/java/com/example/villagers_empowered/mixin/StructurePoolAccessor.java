@@ -1,5 +1,6 @@
 package com.example.villagers_empowered.mixin;
 
+
 import com.mojang.datafixers.util.Pair;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.minecraft.structure.pool.StructurePool;

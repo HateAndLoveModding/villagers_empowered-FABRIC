@@ -32,5 +32,7 @@ public interface FabricStructurePool {
     /**
      * Gets the identifier for the pool.
      */
-    Identifier getId();
+    default Identifier getId() {
+        return getUnderlyingPool().getId();
+    }
 }
