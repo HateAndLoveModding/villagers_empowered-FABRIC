@@ -2,12 +2,7 @@
   "required": true,
   "package": "com.example.villagers_empowered.mixin",
   "compatibilityLevel": "JAVA_17",
-  "mixins": [
-    "RegistryLoaderMixin",
-    "PoolStructurePieceMixin",
-    "StructurePoolAccessor",
-    "StructurePoolsMixin"
-  ],
+  "mixins": [],
   "injectors": {
     "defaultRequire": 1
   }

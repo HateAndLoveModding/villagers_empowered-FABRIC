@@ -3,16 +3,15 @@
   "id": "villagers_empowered",
   "version": "${version}",
   "name": "Villagers Empowered",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "Villagers Empowered: Unite the best trades, unlock rare spawn eggs, and discover enchanted wonders with this game-changing Minecraft mod!",
   "authors": [
-    "Me!"
+    "PixelPioneer"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/villagers-empowered",
+    "sources": "https://github.com/HateAndLoveModding/villagers_empowered-FABRIC"
   },
-  "license": "CC0-1.0",
-  "icon": "assets/custom_villager/icon.png",
+  "license": "CC BY-NC-SA",
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -25,7 +24,7 @@
   "accessWidener": "villagers_empowered.accesswidener",
   "depends": {
     "fabricloader": ">=0.14.11",
-    "minecraft": ">=1.19.3",
+    "minecraft": ">=1.20",
     "java": ">=17",
     "fabric-api": "*"
   },
