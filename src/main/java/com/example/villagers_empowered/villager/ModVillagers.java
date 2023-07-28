@@ -189,10 +189,12 @@ public class ModVillagers {
                 factories -> {
                     factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG, 1), new ItemStack(Items.COW_SPAWN_EGG, 1), 4, 20, 0.2f)));
                     factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG, 1), new ItemStack(Items.SHEEP_SPAWN_EGG, 1), 4, 20, 0.2f)));
+                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG, 1), new ItemStack(Items.BEE_SPAWN_EGG, 1), 4, 25, 0.25f)));
+                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG, 1), new ItemStack(Items.CHICKEN_SPAWN_EGG, 1), 4, 25, 0.25f)));
                 });
         TradeOfferHelper.registerVillagerOffers(CREATURE_CARRIER,4,
                 factories -> {
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG, 1), new ItemStack(Items.BEE_SPAWN_EGG, 1), 4, 25, 0.25f)));
+                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG, 1), new ItemStack(ModItems.CHARGED_CREEPER_SPAWN_EGG, 1), 4, 25, 0.25f)));
                     factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG, 1), new ItemStack(Items.SLIME_SPAWN_EGG, 1), 4, 25, 0.25f)));
                 });
         TradeOfferHelper.registerVillagerOffers(CREATURE_CARRIER,5,
