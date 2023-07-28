@@ -31,6 +31,13 @@ enrich the journeys of countless players worldwide.
 
 
 
+**Your Mod, Your Rules: License**
+
+This mod uses a CC BY-NC-SA license. You may remix, adapt, and build upon your work non-commercially, as long as you credit me and license my 
+new creations under the identical terms.
+
+
+
 **Forge and Fabric Support: Keeping Pace with Minecraft**
 
 Stay ahead of the game with "Villagers Empowered"! Engineered to support both Forge and Fabric platforms, this mod is equipped to handle the

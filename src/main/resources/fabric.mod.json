@@ -8,11 +8,10 @@
     "PixelPioneer"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/villagers-empowered",
+    "sources": "https://github.com/HateAndLoveModding/villagers_empowered-FABRIC"
   },
-  "license": "CC0-1.0",
-  "icon": "assets/custom_villager/icon.png",
+  "license": "CC BY-NC-SA",
   "environment": "*",
   "entrypoints": {
     "main": [
