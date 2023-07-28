@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
-	"id": "custom_villager",
+	"id": "villagers_empowered",
 	"version": "${version}",
-	"name": "Custom Villager",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Villagers Empowered",
+	"description": "Villagers Empowered: Unite the best trades, unlock rare spawn eggs, and discover enchanted wonders with this game-changing Minecraft mod!",
 	"authors": [
-		"Me!"
+		"PixelPioneer"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",

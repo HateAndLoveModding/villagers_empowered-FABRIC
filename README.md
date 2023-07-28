@@ -1,92 +1,39 @@
-# Structurized Reborn
-<p align="left">
-<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-brightgreen.svg"></a>
-</p>
+**Introducing Villagers Empowered Mod: Forge and Fabric**
 
-### THIS IS A REWORK OF DRAYLAR'S *STRUCTURIZED*. See the original here: https://github.com/omega-mc/structurized/tree/1.18
+Are you ready to revolutionize your Minecraft experience? Look no further than "Villagers Empowered"! This game-changing mod combines the best 
+trades from current villagers into one super villager, taking your resource-gathering journey to new heights. But that's not all—this mod is 
+designed with you, the player, in mind, and we want your valuable input to make it even better!
 
-*Structurized Reborn* is a simple library that helps with the addition of custom village structures.
 
-### Jigsaw Modification
-Structurized provides a registry that allows you to add custom structures to `StructurePool`s in jigsaws such as villages. Say we wanted to add `village/plains/houses/plains_small_house_1` to the desert house pool. Simply register the new structure to the desired pool and give it a weight and some optional modifiers. Call these `register` methods in the same place you would call any other server-focused registry event (registering items or blocks, for example)
-```kotlin
-FabricStructurePoolRegistry.register(
-    Identifier("minecraft:village/desert/houses"),                       //the target pool 
-    Identifier("minecraft:village/plains/houses/plains_small_house_1"),  //the new structure nbt to add
-    2,                                                                   //the weight of the structure in the pool
-    StructureProcessorLists.MOSSIFY_10_PERCENT)                          //optional processor to add mossiness
-```
 
-If you don't have any special considerations, you can use `registerSimple` to make your life a bit easier:
-```kotlin
-FabricStructurePoolRegistry.registerSimple(
-    Identifier("minecraft:village/desert/houses"),                       //the target pool 
-    Identifier("minecraft:village/plains/houses/plains_small_house_1"),  //the new structure nbt to add
-    2)                                                                   //the weight of the structure in the pool
-```
+**Enhanced Efficiency: Empower Your Trading Hall**
 
-### Flexible Registration
-The register method is quite flexible, with several optional parameters to use as needed. In many cases you will be OK using the `registerSimple` method, but the main `register` method can be useful for doing something like adding the random mossy cobblestone that many village structures have.
+Say goodbye to the cluttered trading halls of the past! "Villagers Empowered" optimizes your trading process, granting you more emeralds and 
+valuable resources in less space and time. The result? A seamless and rewarding adventure in your Minecraft world!
 
-Parameters:
 
-`poolId`: required, the target pool of structures to modify
 
-`structureId`: required, the new structure nbt location identifier
+**Unleash the Rare and Unseen: Spawn Eggs and Enchanting Marvels**
 
-`weight`: required, the probability of a structure being chosen for generation. A weight of 1 to 3 is about 1 structure per village
+Discover the true potential of your world with exclusive offerings! Our empowered villager presents you with rare spawn eggs, including the 
+elusive "Charged Creeper Spawn Egg". But that's not all—it unveils an all-new structure in plains villages housing packed bookshelves, 
+brimming with the best-enchanted books. Prepare to unlock the mysteries of enchanting like never before!
 
-`processor`: optional, defines custom generation tweaks to apply, like random mossy cobblestone
 
-`projection`: optional, defines the way the structure interacts with the ground (rigid in space or conform to the landscape)
 
-`type`: optional, defines the type of `structurePoolElement` you want. This isn't needed the majority of the time
+**Your Feedback Matters: Bug Reports and Brilliant Suggestions**
 
-### Callback Registration
-If you want to do something more advanced with a structure pool, you can also directly register to the callback and add whatever event code you'd like. Registering to the callback looks like so:
-```kotlin
-StructurePoolAddCallback.EVENT.register(structurePool -> {
-    if(structurePool.getUnderlying().getId().toString().equals("minecraft:village/plains/houses")) {
-        structurePool.addStructurePoolElement(new SinglePoolElement("village/desert/houses/desert_small_house_1"), 50);
-    }
-});
-```
+We value your experience and expertise as part of our community! If you encounter any bugs or issues while using "Villagers Empowered," we urge 
+you to report them in the comments section. Your input is invaluable, helping us fine-tune the mod to perfection and create an even smoother 
+gameplay experience for everyone. But that's not all—we're eager to hear your suggestions too! Have a brilliant idea to make "Villagers 
+Empowered" even more incredible? Don't hesitate to share it in the comments. Your creativity and vision could shape the future of this mod and 
+enrich the journeys of countless players worldwide.
 
-### Adding Dependency
-You can add this as a dependency to your project using modrinth's built in maven repository. The {VERSION} will be the version number of the version you are trying to work with. For example, the first version of this library was uploaded under version number **1.18.2-01**.
 
-In a build.gradle:
-```java
-repositories {
-    maven {
-        name = "Modrinth"
-        url = "https://api.modrinth.com/maven"
-        content {
-            includeGroup "maven.modrinth"
-        }
-    }
-}
 
-dependencies {
-    modImplementation "maven.modrinth:Wd844r7Q:{VERSION}"
-    include("maven.modrinth:Wd844r7Q:{VERSION}")
-}
-```
+**Forge and Fabric Support: Keeping Pace with Minecraft**
 
-In a build.gradle.kts
-```kotlin
-repositories {
-    maven {
-        name = "Modrinth"
-        url = uri("https://api.modrinth.com/maven")
-        content {
-            includeGroup("maven.modrinth")
-        }
-    }
-}
-
-dependencies {
-    modImplementation("maven.modrinth:Wd844r7Q:{VERSION}")
-    include("maven.modrinth:Wd844r7Q:{VERSION}")
-}
-```
+Stay ahead of the game with "Villagers Empowered"! Engineered to support both Forge and Fabric platforms, this mod is equipped to handle the 
+latest Minecraft versions, ensuring you always have access to the latest features and enhancements. Embrace the power of community-driven 
+development—Villagers Empowered. Redefine your Minecraft adventure today and be a part of the growing community shaping the future of this 
+mod! (Remember to report bugs and share your suggestions in the comments below!)
