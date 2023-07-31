@@ -35,6 +35,4 @@ jar {
         rename { "${it}_${project.archivesBaseName}"}
     }
 }
-loom {
-    accessWidenerPath = file("src/main/resources/villagers_empowered.accesswidener")
-}
+loom {}

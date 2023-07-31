@@ -21,7 +21,6 @@
   "mixins": [
     "villagers_empowered.mixins.json"
   ],
-  "accessWidener": "villagers_empowered.accesswidener",
   "depends": {
     "fabricloader": ">=0.14.11",
     "minecraft": ">=1.20",
