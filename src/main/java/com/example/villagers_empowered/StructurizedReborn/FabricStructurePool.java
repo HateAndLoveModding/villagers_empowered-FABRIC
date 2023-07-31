@@ -7,7 +7,4 @@ import net.minecraft.util.Identifier;
 public interface FabricStructurePool {
     void addStructurePoolElement(StructurePoolElement element, int weight);
     StructurePool getUnderlyingPool();
-    default Identifier getId() {
-        return getUnderlyingPool().getId();
-    }
 }

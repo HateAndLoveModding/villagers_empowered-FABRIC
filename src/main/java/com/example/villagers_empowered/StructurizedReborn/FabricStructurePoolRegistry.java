@@ -40,16 +40,6 @@ public class FabricStructurePoolRegistry {
         structures_key_ref.put(structureId.toString(),poolId.toString());
     }
 
-    public static @Nullable Triple<String,String,String> getPoolStructureElementInfo(String id){
-        String poolId = structures_key_ref.get(id);
-        for (Quintuple<String,String,String,String, Integer> quint : structures_info.get(poolId)){
-            if (quint.a.equals(id)){
-                return Triple.of(quint.b, quint.c, quint.d);
-            }
-        }
-        return null;
-    }
-
     public static void processRegistry(FabricStructurePool structurePool){
         String poolId = structurePool.getUnderlyingPool().getId().toString();
         System.out.println(poolId);
