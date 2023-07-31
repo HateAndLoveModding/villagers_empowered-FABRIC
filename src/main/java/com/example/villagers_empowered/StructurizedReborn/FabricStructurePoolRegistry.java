@@ -32,65 +32,12 @@ public class FabricStructurePoolRegistry {
         register(poolId,structureId,weight, StructureProcessorLists.EMPTY,StructurePool.Projection.RIGID, StructurePoolElementType.LEGACY_SINGLE_POOL_ELEMENT);
     }
 
-    public static void register(Identifier poolId,Identifier structureId, int weight, RegistryEntry<StructureProcessorList> processor){
-        register(poolId,structureId,weight,processor,StructurePool.Projection.RIGID,StructurePoolElementType.LEGACY_SINGLE_POOL_ELEMENT);
-    }
-
-    public static void register(Identifier poolId,Identifier structureId, int weight, RegistryEntry<StructureProcessorList> processor, StructurePool.Projection projection){
-        register(poolId,structureId,weight,processor,projection,StructurePoolElementType.LEGACY_SINGLE_POOL_ELEMENT);
-    }
-
     public static void register(Identifier poolId,Identifier structureId, int weight, RegistryEntry<StructureProcessorList> processor, StructurePool.Projection projection ,StructurePoolElementType<?> type){
         String poolType = Objects.requireNonNull(Registry.STRUCTURE_POOL_ELEMENT.getId(type)).toString();
         String processorId = Objects.requireNonNull(BuiltinRegistries.STRUCTURE_PROCESSOR_LIST.getId(processor.value())).toString();
         String projectionId = projection.getId();
         structures_info.put(poolId.toString(), new Quintuple<>(structureId.toString(), poolType, processorId, projectionId, weight));
         structures_key_ref.put(structureId.toString(),poolId.toString());
-    }
-
-    public static void registerFeature(Identifier poolId, Identifier structureId, int weight, StructurePool.Projection projection, RegistryEntry<PlacedFeature> entry){
-        register(poolId,structureId,weight,StructureProcessorLists.EMPTY,projection,StructurePoolElementType.FEATURE_POOL_ELEMENT);
-        feature_structures.put(poolId.toString(), new Pair<>(structureId.toString(),entry));
-    }
-
-    public static void registerList(Identifier poolId, int weight, ListPoolElement listPoolElement){
-        register(poolId,new Identifier("minecraft:air"),weight,StructureProcessorLists.EMPTY, StructurePool.Projection.RIGID,StructurePoolElementType.LIST_POOL_ELEMENT);
-        list_structures.put(poolId.toString(), listPoolElement);
-    }
-
-    public static class ListPool {
-
-        private StructurePool.Projection projection;
-        private final List<Pair<String, RegistryEntry<StructureProcessorList> >> structureList = new ArrayList<>();
-
-        private ListPool(){
-            projection = StructurePool.Projection.RIGID;
-        }
-
-        public static ListPool builder(){
-            return new ListPool();
-        }
-
-        public ListPool addStructureElement(Identifier structureId){
-            this.structureList.add(new Pair<>(structureId.toString(), StructureProcessorLists.EMPTY));
-            return this;
-        }
-
-        public ListPool addStructureElement(Identifier structureId, RegistryEntry<StructureProcessorList> processor){
-            this.structureList.add(new Pair<>(structureId.toString(), processor));
-            return this;
-        }
-
-        public ListPool addProjection(StructurePool.Projection projection){
-            this.projection = projection;
-            return this;
-        }
-
-        public ListPoolElement buildListPool(){
-            List<Function<StructurePool.Projection, ? extends StructurePoolElement>> listPoolList = new ArrayList<>();
-            structureList.forEach(value -> listPoolList.add(StructurePoolElement.ofProcessedLegacySingle(value.getLeft(),value.getRight())));
-            return StructurePoolElement.ofList(listPoolList).apply(projection);
-        }
     }
 
     public static @Nullable Triple<String,String,String> getPoolStructureElementInfo(String id){

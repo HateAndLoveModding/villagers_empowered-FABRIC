@@ -25,7 +25,6 @@ public interface DynamicRegistryManagerMixin {
         if (registryKey.equals(Registry.STRUCTURE_POOL_KEY)) {
             for (E registryEntry : loaderAccess.dynamicRegistryManager().get(registryKey)) {
                 if (registryEntry instanceof StructurePool pool) {
-                    //System.out.println("successfully registered a callback");
                     StructurePoolAddCallback.EVENT.invoker().onAdd(new FabricStructurePoolImpl(pool));
                 }
             }
