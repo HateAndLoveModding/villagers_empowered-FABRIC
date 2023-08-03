@@ -58,59 +58,31 @@ public class ModVillagers {
                     factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.BLAST_PROTECTION, 4)), 2, 25, 0.25f)));
                     factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.PROJECTILE_PROTECTION, 4)), 2, 25, 0.25f)));
                     factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.FIRE_PROTECTION, 4)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.MENDING, 1)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.UNBREAKING, 3)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.THORNS, 3)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.RESPIRATION, 3)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.FEATHER_FALLING, 4)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.FROST_WALKER, 2)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.SHARPNESS, 5)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.SWEEPING, 3)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.LOOTING, 3)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.EFFICIENCY, 5)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.SILK_TOUCH, 1)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.FORTUNE, 3)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.POWER, 5)), 2, 25, 0.25f)));
                 });
         TradeOfferHelper.registerVillagerOffers(PACKED_LIBRARIAN,2,
                 factories -> {
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.PROTECTION, 4)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.BLAST_PROTECTION, 4)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.PROJECTILE_PROTECTION, 4)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.FIRE_PROTECTION, 4)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.MENDING, 1)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.UNBREAKING, 3)), 2, 25, 0.25f)));
                     factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.THORNS, 3)), 2, 25, 0.25f)));
                     factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.RESPIRATION, 3)), 2, 25, 0.25f)));
                     factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.FEATHER_FALLING, 4)), 2, 25, 0.25f)));
                     factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.FROST_WALKER, 2)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.SHARPNESS, 5)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.SWEEPING, 3)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.LOOTING, 3)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.EFFICIENCY, 5)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.SILK_TOUCH, 1)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.FORTUNE, 3)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.POWER, 5)), 2, 25, 0.25f)));
                 });
         TradeOfferHelper.registerVillagerOffers(PACKED_LIBRARIAN,3,
                 factories -> {
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.PROTECTION, 4)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.BLAST_PROTECTION, 4)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.PROJECTILE_PROTECTION, 4)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.FIRE_PROTECTION, 4)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.MENDING, 1)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.UNBREAKING, 3)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.THORNS, 3)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.RESPIRATION, 3)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.FEATHER_FALLING, 4)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.FROST_WALKER, 2)), 2, 25, 0.25f)));
                     factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.SHARPNESS, 5)), 2, 25, 0.25f)));
                     factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.SWEEPING, 3)), 2, 25, 0.25f)));
                     factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.LOOTING, 3)), 2, 25, 0.25f)));
+                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.POWER, 5)), 2, 25, 0.25f)));
+                });
+        TradeOfferHelper.registerVillagerOffers(PACKED_LIBRARIAN,4,
+                factories -> {
+                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.MENDING, 1)), 2, 25, 0.25f)));
+                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.UNBREAKING, 3)), 2, 25, 0.25f)));
+                });
+        TradeOfferHelper.registerVillagerOffers(PACKED_LIBRARIAN,3,
+                factories -> {
                     factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.EFFICIENCY, 5)), 2, 25, 0.25f)));
                     factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.SILK_TOUCH, 1)), 2, 25, 0.25f)));
                     factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.FORTUNE, 3)), 2, 25, 0.25f)));
-                    factories.add(((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.POWER, 5)), 2, 25, 0.25f)));
                 });
 
 
