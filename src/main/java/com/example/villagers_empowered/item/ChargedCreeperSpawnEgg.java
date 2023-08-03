@@ -10,8 +10,6 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.Vec3d;
-import net.minecraft.util.math.Vec3i;
 import net.minecraft.world.World;
 
 public class ChargedCreeperSpawnEgg extends Item {
@@ -20,8 +18,6 @@ public class ChargedCreeperSpawnEgg extends Item {
     }
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        // Ensure we don't spawn the lightning only on the client.
-        // This is to prevent desync.
         if(world.isClient) {
             return TypedActionResult.pass(user.getStackInHand(hand));
         }
@@ -39,7 +35,6 @@ public class ChargedCreeperSpawnEgg extends Item {
         }
         world.spawnEntity(creeperEntity);
 
-        // Spawn the lightning bolt.
         LightningEntity lightningBolt = new LightningEntity(EntityType.LIGHTNING_BOLT, world);
         if (user.getHorizontalFacing().equals(Direction.EAST)) {
             lightningBolt.setPosition(user.getX() + 8, user.getY(), user.getZ());
@@ -52,8 +47,6 @@ public class ChargedCreeperSpawnEgg extends Item {
         }
         world.spawnEntity(lightningBolt);
 
-        // Nothing has changed to the item stack,
-        // so we just return it how it was.
         TypedActionResult.pass(user.getStackInHand(hand));
         ItemStack heldStack = user.getStackInHand(hand);
         heldStack.decrement(1);
