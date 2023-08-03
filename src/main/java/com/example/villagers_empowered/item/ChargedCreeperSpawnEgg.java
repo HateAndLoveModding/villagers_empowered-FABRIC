@@ -17,6 +17,7 @@ public class ChargedCreeperSpawnEgg extends Item {
     }
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+        //test comment
         if(world.isClient) {
             return TypedActionResult.pass(user.getStackInHand(hand));
         }
