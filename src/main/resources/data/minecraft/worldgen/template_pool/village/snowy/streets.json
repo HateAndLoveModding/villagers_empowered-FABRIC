@@ -1,0 +1,65 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "villagers_empowered:snowy/corner12",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "terrain_matching"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "villagers_empowered:snowy/straight12",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "terrain_matching"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "villagers_empowered:snowy/crossroad12",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "terrain_matching"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "villagers_empowered:snowy/corner6",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "terrain_matching"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "villagers_empowered:snowy/straight6",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "terrain_matching"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "villagers_empowered:snowy/crossroad6",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "terrain_matching"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:empty_pool_element"
+      },
+      "weight": 5
+    }
+  ],
+  "fallback": "minecraft:village/snowy/terminators"
+}

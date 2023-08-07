@@ -16,7 +16,7 @@ valuable resources in less space and time. The result? A seamless and rewarding 
 **Unleash the Rare and Unseen: Spawn Eggs and Enchanting Marvels**
 
 Discover the true potential of your world with exclusive offerings! Our empowered villager presents you with rare spawn eggs, including the
-elusive "Charged Creeper Spawn Egg". But that's not all—it unveils an all-new structure in plains villages housing packed bookshelves,
+elusive "Charged Creeper Spawn Egg". But that's not all—it unveils an all-new structure in all five village types housing packed bookshelves,
 brimming with the best-enchanted books. Prepare to unlock the mysteries of enchanting like never before!
 
 
