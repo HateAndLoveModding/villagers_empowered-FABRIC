@@ -3,8 +3,10 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_small_house_1",
-        "processors": "minecraft:mossify_10_percent",
+        "location": "minecraft:village/savanna/houses/savanna_small_house_1",
+        "processors": {
+          "processors": []
+        },
         "projection": "rigid"
       },
       "weight": 1
@@ -12,8 +14,10 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_small_house_2",
-        "processors": "minecraft:mossify_10_percent",
+        "location": "minecraft:village/savanna/houses/savanna_small_house_2",
+        "processors": {
+          "processors": []
+        },
         "projection": "rigid"
       },
       "weight": 1
@@ -21,8 +25,10 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_small_house_3",
-        "processors": "minecraft:mossify_10_percent",
+        "location": "minecraft:village/savanna/houses/savanna_small_house_3",
+        "processors": {
+          "processors": []
+        },
         "projection": "rigid"
       },
       "weight": 1
@@ -30,8 +36,10 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_small_house_4",
-        "processors": "minecraft:mossify_10_percent",
+        "location": "minecraft:village/savanna/houses/savanna_small_house_4",
+        "processors": {
+          "processors": []
+        },
         "projection": "rigid"
       },
       "weight": 1
@@ -39,8 +47,10 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_small_house_5",
-        "processors": "minecraft:mossify_10_percent",
+        "location": "minecraft:village/savanna/houses/savanna_small_house_5",
+        "processors": {
+          "processors": []
+        },
         "projection": "rigid"
       },
       "weight": 1
@@ -48,8 +58,10 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_small_house_6",
-        "processors": "minecraft:mossify_10_percent",
+        "location": "minecraft:village/savanna/houses/savanna_small_house_6",
+        "processors": {
+          "processors": []
+        },
         "projection": "rigid"
       },
       "weight": 1
@@ -57,8 +69,10 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_small_house_7",
-        "processors": "minecraft:mossify_10_percent",
+        "location": "minecraft:village/savanna/houses/savanna_small_house_7",
+        "processors": {
+          "processors": []
+        },
         "projection": "rigid"
       },
       "weight": 1
@@ -66,8 +80,10 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_small_house_8",
-        "processors": "minecraft:mossify_10_percent",
+        "location": "minecraft:village/savanna/houses/savanna_small_house_8",
+        "processors": {
+          "processors": []
+        },
         "projection": "rigid"
       },
       "weight": 1
@@ -75,70 +91,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_medium_house_1",
-        "processors": "minecraft:mossify_10_percent",
-        "projection": "rigid"
-      },
-      "weight": 2
-    },
-    {
-      "element": {
-        "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_medium_house_2",
-        "processors": "minecraft:mossify_10_percent",
-        "projection": "rigid"
-      },
-      "weight": 2
-    },
-    {
-      "element": {
-        "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_big_house_1",
-        "processors": "minecraft:mossify_10_percent",
-        "projection": "rigid"
-      },
-      "weight": 2
-    },
-    {
-      "element": {
-        "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_butcher_shop_1",
-        "processors": "minecraft:mossify_10_percent",
-        "projection": "rigid"
-      },
-      "weight": 2
-    },
-    {
-      "element": {
-        "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_butcher_shop_2",
-        "processors": "minecraft:mossify_10_percent",
-        "projection": "rigid"
-      },
-      "weight": 2
-    },
-    {
-      "element": {
-        "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_tool_smith_1",
-        "processors": "minecraft:mossify_10_percent",
-        "projection": "rigid"
-      },
-      "weight": 2
-    },
-    {
-      "element": {
-        "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_fletcher_house_1",
-        "processors": "minecraft:mossify_10_percent",
-        "projection": "rigid"
-      },
-      "weight": 2
-    },
-    {
-      "element": {
-        "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_shepherds_house_1",
+        "location": "minecraft:village/savanna/houses/savanna_medium_house_1",
         "processors": {
           "processors": []
         },
@@ -149,8 +102,10 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_armorer_house_1",
-        "processors": "minecraft:mossify_10_percent",
+        "location": "minecraft:village/savanna/houses/savanna_medium_house_2",
+        "processors": {
+          "processors": []
+        },
         "projection": "rigid"
       },
       "weight": 2
@@ -158,8 +113,10 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_fisher_cottage_1",
-        "processors": "minecraft:mossify_10_percent",
+        "location": "minecraft:village/savanna/houses/savanna_butchers_shop_1",
+        "processors": {
+          "processors": []
+        },
         "projection": "rigid"
       },
       "weight": 2
@@ -167,8 +124,10 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_tannery_1",
-        "processors": "minecraft:mossify_10_percent",
+        "location": "minecraft:village/savanna/houses/savanna_butchers_shop_2",
+        "processors": {
+          "processors": []
+        },
         "projection": "rigid"
       },
       "weight": 2
@@ -176,8 +135,10 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_cartographer_1",
-        "processors": "minecraft:mossify_10_percent",
+        "location": "minecraft:village/savanna/houses/savanna_tool_smith_1",
+        "processors": {
+          "processors": []
+        },
         "projection": "rigid"
       },
       "weight": 2
@@ -185,8 +146,76 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_library_1",
-        "processors": "minecraft:mossify_10_percent",
+        "location": "minecraft:village/savanna/houses/savanna_fletcher_house_1",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "minecraft:village/savanna/houses/savanna_shepherd_1",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "minecraft:village/savanna/houses/savanna_armorer_1",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "minecraft:village/savanna/houses/savanna_fisher_cottage_1",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "minecraft:village/savanna/houses/savanna_tannery_1",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "minecraft:village/savanna/houses/savanna_cartographer_1",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "minecraft:village/savanna/houses/savanna_library_1",
+        "processors": {
+          "processors": []
+        },
         "projection": "rigid"
       },
       "weight": 3
@@ -194,61 +223,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_library_2",
-        "processors": "minecraft:mossify_10_percent",
-        "projection": "rigid"
-      },
-      "weight": 3
-    },
-    {
-      "element": {
-        "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_masons_house_1",
-        "processors": "minecraft:mossify_10_percent",
-        "projection": "rigid"
-      },
-      "weight": 2
-    },
-    {
-      "element": {
-        "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_weaponsmith_1",
-        "processors": "minecraft:mossify_10_percent",
-        "projection": "rigid"
-      },
-      "weight": 2
-    },
-    {
-      "element": {
-        "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_temple_3",
-        "processors": "minecraft:mossify_10_percent",
-        "projection": "rigid"
-      },
-      "weight": 2
-    },
-    {
-      "element": {
-        "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_temple_4",
-        "processors": "minecraft:mossify_10_percent",
-        "projection": "rigid"
-      },
-      "weight": 2
-    },
-    {
-      "element": {
-        "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_stable_1",
-        "processors": "minecraft:mossify_10_percent",
-        "projection": "rigid"
-      },
-      "weight": 2
-    },
-    {
-      "element": {
-        "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_stable_2",
+        "location": "minecraft:village/savanna/houses/savanna_mason_1",
         "processors": {
           "processors": []
         },
@@ -259,25 +234,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_large_farm_1",
-        "processors": "minecraft:farm_plains",
-        "projection": "rigid"
-      },
-      "weight": 2
-    },
-    {
-      "element": {
-        "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_small_farm_1",
-        "processors": "minecraft:farm_plains",
-        "projection": "rigid"
-      },
-      "weight": 2
-    },
-    {
-      "element": {
-        "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_animal_pen_1",
+        "location": "minecraft:village/savanna/houses/savanna_weaponsmith_1",
         "processors": {
           "processors": []
         },
@@ -288,7 +245,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_animal_pen_2",
+        "location": "minecraft:village/savanna/houses/savanna_weaponsmith_2",
         "processors": {
           "processors": []
         },
@@ -299,7 +256,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_animal_pen_3",
+        "location": "minecraft:village/savanna/houses/savanna_temple_1",
         "processors": {
           "processors": []
         },
@@ -310,27 +267,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_accessory_1",
-        "processors": {
-          "processors": []
-        },
-        "projection": "rigid"
-      },
-      "weight": 1
-    },
-    {
-      "element": {
-        "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_meeting_point_4",
-        "processors": "minecraft:mossify_70_percent",
-        "projection": "rigid"
-      },
-      "weight": 2
-    },
-    {
-      "element": {
-        "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/houses/plains_meeting_point_5",
+        "location": "minecraft:village/savanna/houses/savanna_temple_2",
         "processors": {
           "processors": []
         },
@@ -341,7 +278,67 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "villagers_empowered:plains/packed_house_plains",
+        "location": "minecraft:village/savanna/houses/savanna_large_farm_1",
+        "processors": "minecraft:farm_savanna",
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "minecraft:village/savanna/houses/savanna_large_farm_2",
+        "processors": "minecraft:farm_savanna",
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "minecraft:village/savanna/houses/savanna_small_farm",
+        "processors": "minecraft:farm_savanna",
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "minecraft:village/savanna/houses/savanna_animal_pen_1",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "minecraft:village/savanna/houses/savanna_animal_pen_2",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "minecraft:village/savanna/houses/savanna_animal_pen_3",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "villagers_empowered:savanna/packed_house_savanna",
         "processors": "minecraft:randomize_andesite",
         "projection": "rigid"
       },
@@ -354,5 +351,5 @@
       "weight": 9
     }
   ],
-  "fallback": "minecraft:village/plains/terminators"
+  "fallback": "minecraft:village/savanna/terminators"
 }
