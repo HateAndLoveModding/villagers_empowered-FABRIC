@@ -15,6 +15,7 @@ public class ChargedCreeperSpawnEgg extends Item {
     public ChargedCreeperSpawnEgg(Settings settings) {
         super(settings);
     }
+
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         if(world.isClient) {
