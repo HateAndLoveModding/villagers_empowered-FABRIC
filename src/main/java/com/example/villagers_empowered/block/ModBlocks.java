@@ -8,37 +8,30 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block LIFARMIAN_TABLE = registerBlock("lifarmian_table",
-            new Block(FabricBlockSettings.copy(Blocks.OAK_WOOD).strength(2.5f).hardness(2.5f).requiresTool()), ItemGroups.FUNCTIONAL);
+            new Block(FabricBlockSettings.copy(Blocks.OAK_WOOD).strength(2.5f).hardness(2.5f).requiresTool()));
     public static final Block FLASONIC_TABLE = registerBlock("flasonic_table",
-            new Block(FabricBlockSettings.copy(Blocks.OAK_WOOD).strength(2.5f).hardness(2.5f).requiresTool()), ItemGroups.FUNCTIONAL);
+            new Block(FabricBlockSettings.copy(Blocks.OAK_WOOD).strength(2.5f).hardness(2.5f).requiresTool()));
     public static final Block CREATURE_CARRIER_BLOCK = registerBlock("creature_carrier_block",
-            new Block(FabricBlockSettings.copy(Blocks.IRON_BLOCK).strength(3.5f).hardness(3.5f).requiresTool()), ItemGroups.FUNCTIONAL);
+            new Block(FabricBlockSettings.copy(Blocks.IRON_BLOCK).strength(3.5f).hardness(3.5f).requiresTool()));
     public static final Block PACKED_BOOKSHELF = registerBlock("packed_bookshelf",
-            new Block(FabricBlockSettings.copy(Blocks.OAK_WOOD).strength(4f).hardness(4f).requiresTool()), ItemGroups.FUNCTIONAL);
+            new Block(FabricBlockSettings.copy(Blocks.OAK_WOOD).strength(4f).hardness(4f).requiresTool()));
 
-    private static Block registerBlockWithoutItem(String name, Block block) {
+    private static Block registerBlock(String name, Block block) {
+        registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(villagers_empowered.MOD_ID, name), block);
     }
 
-    private static Block registerBlock(String name, Block block, RegistryKey<ItemGroup> tab) {
-        registerBlockItem(name, block, tab);
-        return Registry.register(Registries.BLOCK, new Identifier(villagers_empowered.MOD_ID, name), block);
-    }
-
-    private static Item registerBlockItem(String name, Block block, RegistryKey<ItemGroup> tab) {
+    private static void registerBlockItem(String name, Block block) {
         Item item = Registry.register(Registries.ITEM, new Identifier(villagers_empowered.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
-        ItemGroupEvents.modifyEntriesEvent(tab).register(entries -> entries.add(item));
-        return item;
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> entries.add(item));
     }
 
     public static void registerModBlocks() {
