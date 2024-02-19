@@ -3,11 +3,15 @@
   "entity.minecraft.villager.flasonic": "Flasonic",
   "entity.minecraft.villager.creature_carrier": "Creature Carrier",
   "entity.minecraft.villager.packed_librarian": "Packed Librarian",
+  "entity.minecraft.villager.arcane_artisan": "Arcane Artisan",
+  "entity.minecraft.villager.potion_master": "Potion Master",
 
   "block.villagers_empowered.lifarmian_table": "Lifarmian Table",
   "block.villagers_empowered.flasonic_table": "Flasonic Table",
   "block.villagers_empowered.creature_carrier_block": "Creature Carrier Block",
   "block.villagers_empowered.packed_bookshelf": "Packed Bookshelf",
+  "block.villagers_empowered.artisans_workbench": "Artisan's Workbench",
+  "block.villagers_empowered.potion_stand": "Potion Stand",
 
   "item.villagers_empowered.base_spawn_egg": "Base Spawn Egg",
   "item.villagers_empowered.charged_creeper_spawn_egg": "Charged Creeper Spawn Egg"

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "villagers_empowered:creature_carrier_block"
+    "villagers_empowered:creature_carrier_block",
+    "villagers_empowered:artisans_workbench",
+    "villagers_empowered:potion_stand"
   ]
 }

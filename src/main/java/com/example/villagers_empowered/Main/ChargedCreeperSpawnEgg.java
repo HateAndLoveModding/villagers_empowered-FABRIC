@@ -1,4 +1,4 @@
-package com.example.villagers_empowered.item;
+package com.example.villagers_empowered.Main;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LightningEntity;

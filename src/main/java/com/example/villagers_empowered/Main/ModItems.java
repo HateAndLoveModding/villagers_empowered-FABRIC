@@ -1,4 +1,4 @@
-package com.example.villagers_empowered.item;
+package com.example.villagers_empowered.Main;
 
 import com.example.villagers_empowered.villagers_empowered;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;

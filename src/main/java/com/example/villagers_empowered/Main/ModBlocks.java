@@ -1,4 +1,4 @@
-package com.example.villagers_empowered.block;
+package com.example.villagers_empowered.Main;
 
 import com.example.villagers_empowered.villagers_empowered;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -22,6 +22,10 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copy(Blocks.IRON_BLOCK).strength(3.5f).hardness(3.5f).requiresTool()));
     public static final Block PACKED_BOOKSHELF = registerBlock("packed_bookshelf",
             new Block(FabricBlockSettings.copy(Blocks.OAK_WOOD).strength(4f).hardness(4f).requiresTool()));
+    public static final Block ARTISANS_WORKBENCH = registerBlock("artisans_workbench",
+            new Block(FabricBlockSettings.copy(Blocks.IRON_BLOCK).strength(5f).hardness(5f).requiresTool()));
+    public static final Block POTION_STAND = registerBlock("potion_stand",
+            new Block(FabricBlockSettings.copy(Blocks.BREWING_STAND).strength(3.5f).hardness(3.5f).requiresTool()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
